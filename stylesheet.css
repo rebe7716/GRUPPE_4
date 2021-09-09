@@ -1,0 +1,68 @@
+/* FOR ALLE SIDER */
+
+html {
+  background-color: #fbf7e7;
+}
+
+/*menubar*/
+
+header nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 0;
+  gap: 20px;
+  overflow-x: auto;
+  font-size: 1.3rem;
+  scrollbar-width: none;
+  margin: 3rem;
+}
+
+a:hover {
+  color: #f77e0b;
+}
+
+a {
+  color: black;
+}
+
+#menu {
+  list-style-type: none;
+  transition: transform 0.3s;
+  transform-origin: top left;
+}
+
+#menuknap {
+  display: inline-block;
+  color: grey;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.logo {
+  margin-inline: 0, auto;
+}
+
+/* burger menu*/
+.hidden {
+  /* display: none;
+  transform: scale(0); */
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+@media only screen and (min-width: 600px) {
+  #menuknap {
+    display: none;
+  }
+
+  #menu.hidden {
+    transform: translateX(0);
+    opacity: 1;
+    display: flex;
+    gap: 50px;
+  }
+
+  #menu li {
+    display: inline-block;
+  }
+}
