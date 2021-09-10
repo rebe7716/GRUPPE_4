@@ -4,12 +4,12 @@ html {
   background-color: #fbf7e7;
 }
 
-
 /* skrifttyper */
 
 @font-face {
-  font-family: "skia;
+  font-family: "skia";
   src: url("font/Skia.woff2") format("woff2");
+}
 
 /*menubar*/
 
@@ -31,10 +31,8 @@ a:hover {
 
 a {
   color: black;
-  font-family: 'skia';
+  font-family: "skia";
 }
-
-
 
 #menu {
   list-style-type: none;
