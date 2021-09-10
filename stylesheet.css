@@ -4,6 +4,10 @@ html {
   background-color: #fbf7e7;
 }
 
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
 /* skrifttyper */
 
 @font-face {
@@ -46,17 +50,47 @@ a {
   font-family: "Bebas Neue", sans-serif;
 }
 
-.logo {
+#logo img {
   margin-inline: 0, auto;
+  height: 150px;
+  max-width: 150px;
+}
+
+/* herobillede */
+
+.hero_pic {
+  background-image: url(pics/Splash.jpg);
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 /* burger menu*/
 .hidden {
-  /* display: none;
-  transform: scale(0); */
+  display: none;
+  /* transform: scale(0);  */
   transform: translateX(-100%);
-  opacity: 0;
 }
+
+/* @media only screen and (max-width: 600px) { */
+#menu #logo {
+  display: none;
+}
+
+#logo2 {
+  height: 100px;
+  width: auto;
+  margin-inline: auto;
+  margin-block-end: 20px;
+}
+
+#logo_2 {
+  margin-inline: auto;
+}
+/* } */
 
 @media only screen and (min-width: 600px) {
   #menuknap {
@@ -72,5 +106,13 @@ a {
 
   #menu li {
     display: inline-block;
+  }
+
+  #logo_2 {
+    display: none;
+  }
+
+  #menu #logo {
+    display: block;
   }
 }
