@@ -55,8 +55,8 @@ a {
 
 #logo img {
   margin-inline: 0, auto;
-  height: 150px;
-  max-width: 150px;
+  height: 180px;
+  max-width: auto;
 }
 
 /* herobillede */
@@ -84,7 +84,7 @@ img {
 }
 
 #logo2 {
-  height: 100px;
+  height: 180px;
   width: auto;
   margin-inline: auto;
   margin-block-end: 20px;

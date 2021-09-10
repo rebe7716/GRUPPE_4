@@ -1,4 +1,27 @@
 /* FOR ALLE OM OS */
 
+@font-face {
+  font-family: "skia";
+  src: url("font/Skia.woff2") format("woff2");
+}
+
 h1 {
+  font-family: "skia";
+  text-align: center;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+}
+
+.portraet {
+  height: 500px;
+  width: 500px;
+  margin-inline: auto;
+}
+
+/* placering af tekster omkring portræt */
+
+#portraet_section {
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  grid-template-rows: repeat(15, 1fr);
 }
