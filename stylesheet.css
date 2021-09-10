@@ -49,6 +49,8 @@ a {
   display: inline-block;
   color: grey;
   font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem;
+  margin: 10px;
 }
 
 #logo img {
