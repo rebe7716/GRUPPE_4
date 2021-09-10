@@ -36,6 +36,7 @@ a:hover {
 a {
   color: black;
   font-family: "skia";
+  font-size: 1rem;
 }
 
 #menu {
@@ -114,5 +115,8 @@ img {
 
   #menu #logo {
     display: block;
+  }
+  a {
+    font-size: 1.2rem;
   }
 }
