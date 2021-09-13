@@ -44,6 +44,9 @@ a {
   transition: transform 0.3s;
   transform-origin: top left;
 }
+nav {
+  padding-top: 1rem;
+}
 
 #menuknap {
   display: inline-block;
@@ -176,6 +179,10 @@ Element #liste {
 /* @media only screen and (max-width: 600px) { */
 #menu #logo {
   display: none;
+}
+
+h1 {
+  padding-top: 2rem;
 }
 
 #logo2 {
