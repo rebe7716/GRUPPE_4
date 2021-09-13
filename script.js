@@ -44,7 +44,7 @@ function visFrugt() {
   console.log(frugter);
 
   frugter.forEach((frugt) => {
-    console.log(frugt.type, filter);
+    console.log(filter);
     // loop igennem json (frugter)
     if (filter == frugt.type || filter == "all") {
       // console.log(frugt);
