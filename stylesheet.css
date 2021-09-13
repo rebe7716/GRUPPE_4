@@ -123,18 +123,7 @@ Element #liste {
   margin-inline: auto;
 }
 
-/* footer  */
 
-#footer_1 {
-  background-color: #f77e0b;
-  font-family: "skia";
-  grid-template-rows: 1fr 1fr 1fr;
-}
-
-#footer_1 ul {
-  list-style: none;
-}
-/* } */
 
 @media only screen and (min-width: 600px) {
   #menuknap {
