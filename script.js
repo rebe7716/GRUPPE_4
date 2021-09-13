@@ -50,7 +50,6 @@ function visFrugt() {
       // console.log(frugt);
       const klon = skabelon.cloneNode(true);
       klon.querySelector(".navn").textContent = frugt.navn;
-      klon.querySelector(".type").textContent = frugt.type;
       klon.querySelector(".frugt-billede").src =
         "restdb_images/" + frugt.billedenavn + ".png";
 
