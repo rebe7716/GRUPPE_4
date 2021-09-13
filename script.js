@@ -46,7 +46,7 @@ function visFrugt() {
   frugter.forEach((frugt) => {
     console.log(frugt.type, filter);
     // loop igennem json (frugter)
-    if (filter == frugter.type || filter == "all") {
+    if (filter == frugt.type || filter == "all") {
       // console.log(frugt);
       const klon = skabelon.cloneNode(true);
       klon.querySelector(".navn").textContent = frugt.navn;
