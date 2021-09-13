@@ -13,7 +13,7 @@ h1 {
 }
 
 .portraet {
-  height: auto%;
+  height: auto;
   width: 90%;
   margin-inline: auto;
 }
@@ -65,5 +65,12 @@ p .class1 {
   .portraet {
     max-width: 1000px;
     max-height: auto;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .portraet {
+    height: auto;
+    width: 90%;
   }
 }
