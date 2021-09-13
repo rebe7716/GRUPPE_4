@@ -91,12 +91,14 @@ button {
   font-weight: lighter;
   border: none;
   background-color: #fbf7e7;
+  font-size: 1rem;
 }
 
 #liste {
   margin-inline: 9px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+
   gap: 0px;
   font-size: 0.7rem;
   text-align: center;
@@ -172,5 +174,20 @@ Element #liste {
   }
   a {
     font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  #filtrer {
+    gap: 40px;
+  }
+
+  #liste {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
+
+  button {
+    font-size: 1.2rem;
+    font-weight: lighter;
   }
 }
