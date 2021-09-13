@@ -32,7 +32,7 @@ async function loadJSON() {
     headers: myHeaders,
   });
   frugter = await JSONData.json();
-  console.log("frugter", frugter);
+  // console.log("frugter", frugter);
   visFrugt();
 }
 
@@ -41,12 +41,13 @@ function visFrugt() {
   const dest = document.querySelector("#liste"); // container til articles med en person
   const skabelon = document.querySelector("template").content; // select indhold af html skabelon (article)
   dest.textContent = "";
-  console.log(filter);
+  console.log(frugter);
 
   frugter.forEach((frugt) => {
-    // loop igennem json (personer)
-    if (filter == frugt.kategori || filter == "all") {
-      console.log(frugt);
+    console.log(frugt.type, filter);
+    // loop igennem json (frugter)
+    if (filter == frugt.type || filter == "all") {
+      // console.log(frugt);
       const klon = skabelon.cloneNode(true);
       klon.querySelector(".navn").textContent = frugt.navn;
       klon.querySelector(".type").textContent = frugt.type;
