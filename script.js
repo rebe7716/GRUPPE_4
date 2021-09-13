@@ -55,7 +55,7 @@ function visFrugt() {
 
       //Kalder anonym funktion indeni click, der fører siden over til single view
       klon.querySelector("article").addEventListener("click", () => {
-        location.href = "detail-single-view.html?id=" + frugter._id;
+        location.href = "detail_single_view.html?id=" + frugter._id;
       });
       dest.appendChild(klon);
     }
