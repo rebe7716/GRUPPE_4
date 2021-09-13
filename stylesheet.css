@@ -102,6 +102,7 @@ button {
   gap: 0px;
   font-size: 0.7rem;
   text-align: center;
+  margin-bottom: 8rem;
 }
 
 h2 {
@@ -115,6 +116,39 @@ Element #h2-skift {
 Element #liste {
   margin-inline: 9px;
 }
+
+/* footer  */
+
+#footer_footer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color: #f77e0b;
+}
+
+#footer_1 {
+  font-family: "skia";
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer_box p {
+  color: white;
+}
+
+.footer_box h2 {
+  color: white;
+}
+
+#footer_1 ul {
+  list-style: none;
+}
+
+.footer_box {
+  max-width: 200px;
+  margin: 3rem;
+}
+/* } */
 
 /* burger menu*/
 .hidden {
@@ -148,8 +182,6 @@ Element #liste {
   margin-inline: auto;
 }
 
-
-
 @media only screen and (min-width: 600px) {
   #menuknap {
     display: none;
@@ -175,6 +207,17 @@ Element #liste {
   }
   a {
     font-size: 1.2rem;
+  }
+
+  #footer_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+  }
+
+  .footer_box {
+    max-width: 300px;
+    margin: 3rem;
   }
 }
 
