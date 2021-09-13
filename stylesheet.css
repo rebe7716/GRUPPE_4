@@ -133,7 +133,17 @@ Element #liste {
 }
 
 .footer_box p {
+  line-height: 1.4rem;
   color: white;
+}
+
+#footer_box1 a {
+  text-decoration-line: none;
+  color: white;
+}
+
+#footer_box1 a:hover {
+  color: rgb(149, 144, 92);
 }
 
 .footer_box h2 {
@@ -146,7 +156,7 @@ Element #liste {
 
 .footer_box {
   max-width: 200px;
-  margin: 3rem;
+  margin: 2rem;
 }
 /* } */
 
@@ -208,7 +218,9 @@ Element #liste {
   a {
     font-size: 1.2rem;
   }
+}
 
+@media only screen and (min-width: 700px) {
   #footer_1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
