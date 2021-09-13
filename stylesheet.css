@@ -70,6 +70,8 @@ nav {
 
 #h2-skift {
   margin: 9px;
+  padding-left: 4rem;
+  padding-top: 6rem;
 }
 
 img {
@@ -106,6 +108,7 @@ button {
   font-size: 0.7rem;
   text-align: center;
   margin-bottom: 8rem;
+  padding: 2rem;
 }
 
 h2 {
