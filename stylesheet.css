@@ -30,7 +30,7 @@ header nav ul {
 }
 
 a:hover {
-  color: #f77e0b;
+  color: rgb(149, 144, 92);
 }
 
 a {
@@ -86,8 +86,27 @@ img {
   gap: 7px;
 }
 
+button {
+  font-family: "skia";
+  font-weight: lighter;
+  border: none;
+  background-color: #fbf7e7;
+  font-size: 1rem;
+}
+
 #liste {
   margin-inline: 9px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 0px;
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+h2 {
+  font-family: "skia";
+  font-weight: lighter;
 }
 
 Element #h2-skift {
@@ -102,6 +121,12 @@ Element #liste {
   display: none;
   /* transform: scale(0);  */
   transform: translateX(-100%);
+}
+
+/* "Valgt" filtrerings knap*/
+.valgt {
+  color: rgb(149, 144, 92);
+  text-decoration: underline;
 }
 
 /* @media only screen and (max-width: 600px) { */
@@ -150,5 +175,20 @@ Element #liste {
   }
   a {
     font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  #filtrer {
+    gap: 40px;
+  }
+
+  #liste {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
+
+  button {
+    font-size: 1.2rem;
+    font-weight: lighter;
   }
 }
