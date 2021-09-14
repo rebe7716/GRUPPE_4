@@ -51,7 +51,7 @@ function visFrugt() {
       const klon = skabelon.cloneNode(true);
       klon.querySelector(".navn").textContent = frugt.navn;
       klon.querySelector(".frugt-billede").src =
-        "restdb_images/" + frugt.billedenavn + ".png";
+        "restdb_images/" + frugt.billedenavn + ".webp";
 
       //Kalder anonym funktion indeni click, der fører siden over til single view
       klon.querySelector("article").addEventListener("click", () => {
