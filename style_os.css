@@ -35,6 +35,29 @@ p .class1 {
   grid-row: 3/8;
 }
 
+.portraet_sprite_c {
+  background-image: url("pics/cecilie_1_mobil.png");
+}
+.portraet_sprite_t {
+  background-image: url("pics/thea_1_mobile.png");
+}
+.portraet_sprite_r {
+  background-image: url("pics/rebecca_1_mobil.png");
+}
+.portraet_sprite_l {
+  background-image: url("pics/laura_1_mobil.png");
+}
+
+.portraet_sprite_l,
+.portraet_sprite_r,
+.portraet_sprite_t,
+.portraet_sprite_c {
+  height: 116vw;
+  background-size: cover;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
 @media only screen and (min-width: 600px) {
   #menuknap {
     display: none;
@@ -66,11 +89,31 @@ p .class1 {
     max-width: 1000px;
     max-height: auto;
   }
-}
-
-@media only screen and (min-width: 600px) {
   .portraet {
     height: auto;
     width: 90%;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  .portraet_sprite_c {
+    background-image: url("pics/cecilie_1.png");
+  }
+  .portraet_sprite_t {
+    background-image: url("pics/thea_1.png");
+  }
+  .portraet_sprite_r {
+    background-image: url("pics/rebecca_1.png");
+  }
+  .portraet_sprite_l {
+    background-image: url("pics/laura_1.png");
+  }
+
+  .portraet_sprite_l,
+  .portraet_sprite_r,
+  .portraet_sprite_t,
+  .portraet_sprite_c {
+    height: 50vw;
+    background-size: cover;
   }
 }
