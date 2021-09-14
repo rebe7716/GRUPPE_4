@@ -108,7 +108,8 @@ button {
   font-size: 0.7rem;
   text-align: center;
   margin-bottom: 8rem;
-  padding: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 h2 {
