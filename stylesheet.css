@@ -44,6 +44,9 @@ a {
   transition: transform 0.3s;
   transform-origin: top left;
 }
+nav {
+  padding-top: 1rem;
+}
 
 #menuknap {
   display: inline-block;
@@ -67,6 +70,8 @@ a {
 
 #h2-skift {
   margin: 9px;
+  padding-left: 4rem;
+  padding-top: 6rem;
 }
 
 img {
@@ -102,6 +107,8 @@ button {
   gap: 0px;
   font-size: 0.7rem;
   text-align: center;
+  margin-bottom: 8rem;
+  padding: 2rem;
 }
 
 h2 {
@@ -115,6 +122,49 @@ Element #h2-skift {
 Element #liste {
   margin-inline: 9px;
 }
+
+/* footer  */
+
+#footer_footer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color: #f77e0b;
+}
+
+#footer_1 {
+  font-family: "skia";
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer_box p {
+  line-height: 1.4rem;
+  color: white;
+}
+
+#footer_box1 a {
+  text-decoration-line: none;
+  color: white;
+}
+
+#footer_box1 a:hover {
+  color: rgb(149, 144, 92);
+}
+
+.footer_box h2 {
+  color: white;
+}
+
+#footer_1 ul {
+  list-style: none;
+}
+
+.footer_box {
+  max-width: 200px;
+  margin: 2rem;
+}
+/* } */
 
 /* burger menu*/
 .hidden {
@@ -134,6 +184,10 @@ Element #liste {
   display: none;
 }
 
+h1 {
+  padding-top: 2rem;
+}
+
 #logo2 {
   height: 100px;
   width: auto;
@@ -147,8 +201,6 @@ Element #liste {
 #logo_2 {
   margin-inline: auto;
 }
-
-
 
 @media only screen and (min-width: 600px) {
   #menuknap {
@@ -175,6 +227,19 @@ Element #liste {
   }
   a {
     font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  #footer_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+  }
+
+  .footer_box {
+    max-width: 300px;
+    margin: 3rem;
   }
 }
 
