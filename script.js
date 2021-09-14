@@ -44,7 +44,7 @@ function visFrugt() {
   console.log(frugter);
 
   frugter.forEach((frugt) => {
-    console.log(filter);
+    console.log(frugt._id);
     // loop igennem json (frugter)
     if (filter == frugt.type || filter == "all") {
       // console.log(frugt);
@@ -55,13 +55,30 @@ function visFrugt() {
 
       //Kalder anonym funktion indeni click, der fører siden over til single view
       klon.querySelector("article").addEventListener("click", () => {
-        location.href = "detail_single_view.html?id=" + frugter._id;
+        location.href = "detail_single_view.html?id=" + frugt._id;
+      });
+      klon.querySelector("article").addEventListener("mouseover", () => {
+        visHover(frugt.billedenavn);
+      });
+      klon.querySelector("article").addEventListener("mouseout", () => {
+        fjernHover(frugt.billedenavn);
       });
       dest.appendChild(klon);
     }
   });
 }
 
+function visHover(img) {
+  console.log(event.target);
+  event.target.src = "restdb_images/" + img + "-2.webp";
+  //event target betyder målet for den begivenhed JS laver
+}
+
+function fjernHover(img) {
+  console.log(event.target);
+  event.target.src = "restdb_images/" + img + ".webp";
+  //event target betyder målet for den begivenhed JS laver
+}
 // //menubar, burgermenu
 // function toggleMenu() {
 //   console.log("toggleMenu");
