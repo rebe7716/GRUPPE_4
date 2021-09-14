@@ -71,7 +71,7 @@ nav {
 #h2-skift {
   margin: 9px;
   padding-left: 4rem;
-  padding-top: 6rem;
+  padding-top: 3rem;
 }
 
 img {
@@ -97,13 +97,14 @@ button {
   border: none;
   background-color: #fbf7e7;
   font-size: 1rem;
+  cursor: pointer;
 }
 
 #liste {
   margin-inline: 9px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-
+  justify-content: center;
   gap: 0px;
   font-size: 0.7rem;
   text-align: center;
@@ -201,6 +202,11 @@ h1 {
 
 #logo_2 {
   margin-inline: auto;
+  cursor: pointer;
+}
+
+#logo img:hover {
+  opacity: 0.5;
 }
 
 @media only screen and (min-width: 600px) {
