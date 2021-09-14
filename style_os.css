@@ -22,6 +22,10 @@ h1 {
   position: absolute;
 }
 
+button {
+  margin-left: 1rem;
+}
+
 /* placering af tekster omkring portræt */
 
 .facts {
@@ -68,6 +72,10 @@ p .class1 {
     opacity: 1;
     display: flex;
     gap: 50px;
+  }
+
+  button {
+    display: none;
   }
 
   #menu li {
