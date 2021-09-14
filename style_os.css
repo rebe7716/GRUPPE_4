@@ -103,17 +103,31 @@ p .class1 {
     background-image: url("pics/thea_1.png");
   }
   .portraet_sprite_r {
-    background-image: url("pics/rebecca_1.png");
+    background-image: url("pics/rebecca_desk1.png");
   }
   .portraet_sprite_l {
     background-image: url("pics/laura_1.png");
   }
 
   .portraet_sprite_l,
-  .portraet_sprite_r,
   .portraet_sprite_t,
   .portraet_sprite_c {
-    height: 50vw;
+    height: 53vw;
+    background-size: cover;
+  }
+
+  .portraet_sprite_r {
+    height: 67vw;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .portraet_sprite_l,
+  .portraet_sprite_t,
+  .portraet_sprite_c,
+  .portraet_sprite_r {
+    margin-left: 1rem;
+    margin-right: 1rem;
     background-size: cover;
   }
 }
