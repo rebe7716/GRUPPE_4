@@ -10,7 +10,11 @@
 
 window.addEventListener("DOMContentLoaded", sidenVises);
 let frugter;
+const knap = document.querySelector("button");
 let filter = "all";
+knap.addEventListener("click", () => {
+  location.href = "home.html";
+});
 
 function sidenVises() {
   console.log("sidenVises");

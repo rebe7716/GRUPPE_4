@@ -22,6 +22,10 @@ h1 {
   position: absolute;
 }
 
+button {
+  margin-left: 1rem;
+}
+
 /* placering af tekster omkring portræt */
 
 .facts {
@@ -53,9 +57,9 @@ p .class1 {
 .portraet_sprite_t,
 .portraet_sprite_c {
   height: 116vw;
-  background-size: cover;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  background-size: contain;
+  max-width: 1100px;
+  background-repeat: no-repeat;
 }
 
 @media only screen and (min-width: 600px) {
@@ -68,6 +72,10 @@ p .class1 {
     opacity: 1;
     display: flex;
     gap: 50px;
+  }
+
+  button {
+    display: none;
   }
 
   #menu li {
@@ -103,17 +111,29 @@ p .class1 {
     background-image: url("pics/thea_1.png");
   }
   .portraet_sprite_r {
-    background-image: url("pics/rebecca_1.png");
+    background-image: url("pics/rebecca_desk1.png");
   }
   .portraet_sprite_l {
     background-image: url("pics/laura_1.png");
   }
 
   .portraet_sprite_l,
-  .portraet_sprite_r,
   .portraet_sprite_t,
   .portraet_sprite_c {
-    height: 50vw;
+    height: 60vh;
+  }
+
+  .portraet_sprite_r {
+    height: 85vh;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .portraet_sprite_l,
+  .portraet_sprite_t,
+  .portraet_sprite_c,
+  .portraet_sprite_r {
+    margin-inline: auto;
     background-size: cover;
   }
 }
