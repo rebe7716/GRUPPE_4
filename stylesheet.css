@@ -45,7 +45,7 @@ a {
   transform-origin: top left;
 }
 nav {
-  padding-top: 1rem;
+  padding-top: 1.6rem;
 }
 
 #menuknap {
@@ -72,7 +72,7 @@ nav {
   margin: 9px;
   padding-left: 4rem;
   padding-top: 3rem;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 img {
@@ -117,7 +117,7 @@ button {
 h2 {
   font-family: "skia";
   font-weight: lighter;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 Element #h2-skift {
@@ -158,6 +158,8 @@ Element #liste {
 
 .footer_box h2 {
   color: white;
+  font-size: 1.3rem;
+  font-weight: 800;
 }
 
 #footer_1 ul {

@@ -5,6 +5,9 @@
   src: url("font/Skia.woff2") format("woff2");
 }
 
+button {
+  display: none;
+}
 h1 {
   font-family: "skia";
   text-align: center;
