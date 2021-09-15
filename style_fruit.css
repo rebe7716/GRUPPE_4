@@ -1,6 +1,12 @@
-p {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1rem;
+article p {
+  font-family: "verdana";
+  font-size: 0.9rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  line-height: 1.3rem;
+  background-color: white;
+  padding: 0.8rem;
 }
 
 @font-face {
@@ -12,17 +18,54 @@ button {
   display: none;
 }
 
+footer {
+  margin-top: 10rem;
+}
+
 .frugt h2 {
   font-family: "skia";
   text-align: center;
   margin-top: 7rem;
-  margin-bottom: 3rem;
-  font-size: 1.5rem;
+  margin-bottom: 6rem;
+  font-size: 2rem;
 }
 
 .billede {
   height: auto;
   width: 90%;
   margin-inline: auto;
-  padding: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+@media only screen and (min-width: 800px) {
+  #frugt_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 4rem;
+    max-width: 1000px;
+    margin-inline: auto;
+  }
+
+  .langb  { 
+  
+  }
+
+  #frugt_container p {
+    text-align: justify;
+    background-color: #fbf7e7;
+    font-size: 1rem;
+    max-width: 500px;
+    line-height: 1.5rem;
+  }
+
+  .billede {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    max-width: 500px;
+  }
 }
