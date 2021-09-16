@@ -5,8 +5,8 @@ article p {
   margin-right: 2rem;
   margin-bottom: 2rem;
   line-height: 1.3rem;
-  background-color: white;
-  padding: 0.8rem;
+  border: 1px solid rgb(149, 144, 92);
+  padding: 1rem;
 }
 
 @font-face {
