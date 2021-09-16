@@ -123,12 +123,9 @@ p .class1 {
 
   .portraet_sprite_l,
   .portraet_sprite_t,
-  .portraet_sprite_c {
-    height: 54vh;
-  }
-
+  .portraet_sprite_c,
   .portraet_sprite_r {
-    height: 64vh;
+    height: 54vh;
   }
 
   .portraet_sprite_l,
@@ -150,11 +147,8 @@ p .class1 {
 
   .portraet_sprite_l,
   .portraet_sprite_t,
-  .portraet_sprite_c {
-    height: 66vh;
-  }
-
+  .portraet_sprite_c,
   .portraet_sprite_r {
-    height: 85vh;
+    height: 66vh;
   }
 }
