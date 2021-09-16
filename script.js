@@ -79,7 +79,6 @@ function visHover(img) {
 function fjernHover(img) {
   console.log(event.target);
   event.target.src = "restdb_images/" + img + ".webp";
-  //event target betyder målet for den begivenhed JS laver
 }
 
 //billeder portraet skift
