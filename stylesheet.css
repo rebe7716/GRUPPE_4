@@ -67,13 +67,14 @@ nav {
 .hero_pic {
   display: grid;
 }
-.hero_pic p,
+/* .hero_pic p, */
 .hero_pic img,
-.hero_pic h2 {
+/* .hero_pic h2  */
+#hero_text {
   grid-area: 1/1;
 }
 
-.hero_pic p {
+/* .hero_pic p {
   place-self: center;
   color: white;
   margin: 5rem;
@@ -81,9 +82,31 @@ nav {
   font-family: "skia";
   background-color: #e4adade3;
   font-weight: 500;
+} */
+
+#hero_text {
+  place-self: center;
+  background-color: #e4adade3;
+  margin: 2rem;
+  padding: 1.1rem 1.5rem 1.1rem 1.5rem;
+  text-align: center;
 }
 
+.hero_pic p {
+  font-family: "skia";
+  color: white;
+  padding-top: 0.5rem;
+}
 .hero_pic h2 {
+  font-family: "skia";
+  color: white;
+  padding: 0 3rem 0 3rem;
+  font-weight: 900;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+/* .hero_pic h2 {
   text-align: center;
   padding-top: 3rem;
   font-family: "skia";
@@ -91,7 +114,7 @@ nav {
   color: white;
 
   font-size: 1.4rem;
-}
+} */
 
 #h2-skift {
   margin: 9px;
@@ -271,6 +294,19 @@ h1 {
   a {
     font-size: 1.2rem;
   }
+
+  #hero_text {
+    max-width: 500px;
+  }
+
+  #hero_text h2 {
+    font-size: 2rem;
+    padding: 0 5rem 0 5rem;
+  }
+  #hero_text p {
+    font-size: 1.1rem;
+    padding-top: 1rem;
+  }
 }
 
 @media only screen and (min-width: 700px) {
@@ -310,5 +346,20 @@ h1 {
   button {
     font-size: 1.2rem;
     font-weight: lighter;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #hero_text h2 {
+    font-size: 3.4rem;
+    padding: 0 1rem 0 1rem;
+  }
+  #hero_text p {
+    font-size: 1.3rem;
+    padding-top: 1rem;
+  }
+
+  #hero_text {
+    max-width: 600px;
   }
 }
