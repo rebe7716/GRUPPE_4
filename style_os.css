@@ -63,6 +63,7 @@ p .class1 {
   background-size: contain;
   max-width: 1100px;
   background-repeat: no-repeat;
+  margin-left: 7vw;
 }
 
 @media only screen and (min-width: 600px) {
