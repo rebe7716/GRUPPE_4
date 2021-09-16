@@ -57,6 +57,8 @@ function visFrugt() {
       klon.querySelector("article").addEventListener("click", () => {
         location.href = "detail_single_view.html?id=" + frugt._id;
       });
+
+      //Hover effekt på frugterne sker ved mouseover/mouseout
       klon.querySelector("article").addEventListener("mouseover", () => {
         visHover(frugt.billedenavn);
       });
