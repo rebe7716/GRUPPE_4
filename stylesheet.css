@@ -92,26 +92,37 @@ img {
   gap: 7px;
 }
 
-button {
+button,
+.tilbage_knap {
   font-family: "skia";
   font-weight: lighter;
   border: none;
   background-color: #fbf7e7;
-  font-size: 1rem;
+  font-size: 1.2rem;
   cursor: pointer;
 }
 
+button:hover {
+  color: rgb(149, 144, 92);
+}
+
+.tilbage_knap_box {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 4rem;
+}
+
 #liste {
-  margin-inline: 9px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   gap: 0px;
   font-size: 0.7rem;
   text-align: center;
-  margin-bottom: 16rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  margin-bottom: 10rem;
+  margin-inline: 5px;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 h2 {
@@ -122,9 +133,6 @@ h2 {
 
 Element #h2-skift {
   margin: 9px;
-}
-Element #liste {
-  margin-inline: 9px;
 }
 
 /* footer  */
@@ -170,6 +178,7 @@ Element #liste {
   max-width: 200px;
   margin: 2rem;
 }
+
 /* } */
 
 /* burger menu*/

@@ -14,19 +14,15 @@ article p {
   src: url("font/Skia.woff2") format("woff2");
 }
 
-button {
-  display: none;
-}
-
 footer {
-  margin-top: 10rem;
+  margin: auto;
 }
 
 .frugt h2 {
   font-family: "skia";
   text-align: center;
   margin-top: 7rem;
-  margin-bottom: 6rem;
+  margin-bottom: 1rem;
   font-size: 2rem;
 }
 
@@ -36,8 +32,8 @@ footer {
   margin-inline: auto;
   padding-left: 5rem;
   padding-right: 5rem;
-  padding-top: 2rem;
-  padding-bottom: 4rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 
 @media only screen and (min-width: 800px) {
@@ -48,11 +44,6 @@ footer {
     max-width: 1000px;
     margin-inline: auto;
   }
-
-  .langb  { 
-  
-  }
-
   #frugt_container p {
     text-align: justify;
     background-color: #fbf7e7;
