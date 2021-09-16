@@ -125,6 +125,10 @@ button:hover {
   padding-right: 2rem;
 }
 
+.frugt-billede {
+  cursor: pointer;
+}
+
 h2 {
   font-family: "skia";
   font-weight: lighter;
