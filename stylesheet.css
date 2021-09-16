@@ -70,9 +70,8 @@ nav {
 
 #h2-skift {
   margin: 9px;
-  padding-left: 4rem;
-  padding-top: 3rem;
   font-size: 1.6rem;
+  text-align: center;
 }
 
 img {
@@ -134,11 +133,6 @@ h2 {
   font-weight: lighter;
   font-size: 1rem;
 }
-
-Element #h2-skift {
-  margin: 9px;
-}
-
 /* footer  */
 
 #footer_footer {
