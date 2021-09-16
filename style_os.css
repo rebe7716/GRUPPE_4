@@ -124,11 +124,19 @@ p .class1 {
   .portraet_sprite_l,
   .portraet_sprite_t,
   .portraet_sprite_c {
-    height: 60vh;
+    height: 54vh;
   }
 
   .portraet_sprite_r {
-    height: 85vh;
+    height: 64vh;
+  }
+
+  .portraet_sprite_l,
+  .portraet_sprite_t,
+  .portraet_sprite_c,
+  .portraet_sprite_r {
+    margin-inline: auto;
+    background-size: cover;
   }
 }
 
@@ -137,7 +145,16 @@ p .class1 {
   .portraet_sprite_t,
   .portraet_sprite_c,
   .portraet_sprite_r {
-    margin-inline: auto;
     background-size: cover;
+  }
+
+  .portraet_sprite_l,
+  .portraet_sprite_t,
+  .portraet_sprite_c {
+    height: 66vh;
+  }
+
+  .portraet_sprite_r {
+    height: 85vh;
   }
 }

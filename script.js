@@ -1,4 +1,4 @@
-const header = document.querySelector("#h2-skift");
+// const header = document.querySelector("#h2-skift");
 const myHeaders = {
   "x-apikey": "613b480043cedb6d1f97ef66",
 };
@@ -24,7 +24,7 @@ function filterKategori() {
 
   visFrugt();
 
-  header.textContent = this.textContent;
+  // header.textContent = this.textContent;
 }
 
 async function loadJSON() {
@@ -57,6 +57,8 @@ function visFrugt() {
       klon.querySelector("article").addEventListener("click", () => {
         location.href = "detail_single_view.html?id=" + frugt._id;
       });
+
+      //Hover effekt på frugterne sker ved mouseover/mouseout
       klon.querySelector("article").addEventListener("mouseover", () => {
         visHover(frugt.billedenavn);
       });
@@ -77,17 +79,16 @@ function visHover(img) {
 function fjernHover(img) {
   console.log(event.target);
   event.target.src = "restdb_images/" + img + ".webp";
-  //event target betyder målet for den begivenhed JS laver
 }
 
 //billeder portraet skift
-var w = window.innerWidth;
-console.log(w);
-if (w > 800) {
-  if (location.href == "thea.html") {
-    // document.querySelector(".portraet img").src = "pics/thea_desk.png";
-  }
-}
+// var w = window.innerWidth;
+// console.log(w);
+// if (w > 800) {
+//   if (location.href == "thea.html") {
+//     // document.querySelector(".portraet img").src = "pics/thea_desk.png";
+//   }
+// }
 
 // //menubar, burgermenu
 // function toggleMenu() {
