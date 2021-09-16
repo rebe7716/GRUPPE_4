@@ -1,4 +1,4 @@
-const header = document.querySelector("#h2-skift");
+// const header = document.querySelector("#h2-skift");
 const myHeaders = {
   "x-apikey": "613b480043cedb6d1f97ef66",
 };
@@ -24,7 +24,7 @@ function filterKategori() {
 
   visFrugt();
 
-  header.textContent = this.textContent;
+  // header.textContent = this.textContent;
 }
 
 async function loadJSON() {
@@ -81,13 +81,13 @@ function fjernHover(img) {
 }
 
 //billeder portraet skift
-var w = window.innerWidth;
-console.log(w);
-if (w > 800) {
-  if (location.href == "thea.html") {
-    // document.querySelector(".portraet img").src = "pics/thea_desk.png";
-  }
-}
+// var w = window.innerWidth;
+// console.log(w);
+// if (w > 800) {
+//   if (location.href == "thea.html") {
+//     // document.querySelector(".portraet img").src = "pics/thea_desk.png";
+//   }
+// }
 
 // //menubar, burgermenu
 // function toggleMenu() {
